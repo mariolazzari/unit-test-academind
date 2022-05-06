@@ -45,7 +45,7 @@ it("should throw error if no argument is passed", () => {
   // act
   const result = () => add(numbers);
   // assert
-  expect(result).toThrow();
+  expect(result).toThrow(/is not iterable/);
   //expect(result).not.toThrow();
 });
 
