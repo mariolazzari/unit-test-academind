@@ -42,4 +42,14 @@ describe("cleanNumbers()", () => {
     // assert
     expect(result).toThrow();
   });
+
+  it("should by [1,2] if ['1','2'] passed", () => {
+    // arrange
+    const arr = ["1", "2"];
+    // act
+    const result = cleanNumbers(arr);
+    // assert
+    // expect(result).toBe([1, 2]); -> failed due Object.is equality
+    expect(result).toEqual([1, 2]);
+  });
 });
