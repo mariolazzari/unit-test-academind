@@ -17,7 +17,7 @@ it("should execute the writeData function", () => {
   const filename = "data.txt";
   writeData(data, filename);
 
-  //return expect(writeData(data, filename)).resolves.toBeUndefined();
+  return expect(writeData(data, filename)).resolves.toBeUndefined();
   //expect(fs.writeFile).toBeCalled();
-  expect(fs.writeFile).toBeCalledWith(filename, data);
+  //expect(fs.writeFile).toBeCalledWith(filename, data);
 });
